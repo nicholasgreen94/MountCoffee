@@ -1,0 +1,23 @@
+
+
+//> Colors
+$primary-color: #0e1426; //> Navy Blue
+$main-accent-color: #AD672A; //> Gold
+$white: #fff;
+$black: #000;
+
+//> Fonts
+$primary-font: 'Biryani', sans-serif;
+$secondary-font: 'Lora', serif;
+
+//> Overlay
+$black-overlay: linear-gradient(rgba($black, 0.3), rgba($black, 0.3));
+
+body {
+  box-sizing: border-box;
+  font-family: $primary-font;
+  line-height: 1.5;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}

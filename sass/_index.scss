@@ -1,0 +1,296 @@
+
+#index {
+  h2 {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    position: relative;
+    &:before {
+      content: '';
+      background: $main-accent-color;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  p {
+    font-family: $secondary-font;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  #hero {
+    background: $black-overlay, image-url('hero_bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 356px;
+    position: relative;
+    h1 {
+      color: $white;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1.3;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      hr {
+        background: $main-accent-color;
+        border: none;
+        height: 5px;
+        margin: 10px auto 20px 0;
+        width: 56px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  #story {
+    box-sizing: border-box;
+    padding: 26px 0 0;
+    .row {
+      margin-bottom: 0;
+    }
+    .story-picture {
+      background: image-url('pour_over.jpg') no-repeat center center;
+      background-size: cover;
+      margin-top: 24px;
+      height: 324px;
+    }
+  }
+  #motto {
+    background: #bfbfbf;
+    padding: 24px 0;
+    h2,
+    p {
+      color: $white;
+    }
+    h2 {
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 18px;
+      font-family: $primary-font;
+      font-style: italic;
+      font-weight: 100;
+      margin-bottom: 0;
+      padding-right: 32px;
+      text-align: center;
+      b {
+        color: $main-accent-color;
+        font-size: 26px;
+        font-style: oblique;
+        line-height: 0.5;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+  #origins {
+    padding: 30px 0;
+    .promise {
+      box-sizing: border-box;
+      margin-top: 16px;
+      h3 {
+        font-size: 20px;
+        font-weight: 900;
+      }
+      ul {
+        margin: 16px 0;
+      }
+      li {
+        font-size: 13px;
+        list-style-position: inside;
+        list-style-type: disc;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #subscribe {
+    background: $black-overlay, image-url('coffee_beans.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 32px 0 16px;
+    h2,
+    h3 {
+      color: $white;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .sub-btns {
+      margin-top: 28px;
+      text-align: center;
+      a {
+        box-sizing: border-box;
+        background: transparent;
+        border: 1px solid $white;
+        border-radius: 20px;
+        color: $white;
+        display: block;
+        font-weight: 300;
+        margin: 12px auto;
+        max-width: 134px;
+        padding: 6px 12px;
+        @include transition-property(background, border-color);
+        @include transition-duration(600ms);
+        width: 100%;
+        &:hover {
+          background: rgba($main-accent-color, 0.7);
+          border-color: $main-accent-color;
+        }
+      }
+    }
+  }
+  #location {
+      background: -webkit-linear-gradient(-135deg, #bfbfbf 35%, $white 35%, $white 100%);
+      background: -o-linear-gradient(-135deg, #bfbfbf 35%, $white 35%, $white 100%);
+      background: linear-gradient(-135deg, #bfbfbf 35%, $white 35%, $white 100%);
+      padding: 32px 0 16px;
+      .location {
+        box-sizing: border-box;
+        color: $primary-color;
+        margin-top: 18px;
+        h3 {
+          font-size: 32px;
+        }
+        h4 {
+          color: $primary-color;
+          font-size: 24px;
+          margin-top: 4px;
+        }
+        p,
+        a {
+          font-family: $primary-font;
+        }
+        p {
+          color: $primary-color;
+          font-size: 15px;
+        }
+        a {
+          color: $main-accent-color;
+          font-size: 18px;
+          position: relative;
+          bottom: 5px;
+        }
+      }
+    }
+    @media screen and (min-width: 600px) {
+      h2 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 13px;
+      }
+      #hero {
+        height: 426px;
+        h1 {
+          font-size: 42px;
+        }
+      }
+      #story {
+        padding-top: 0;
+        .story-text {
+          box-sizing: border-box;
+          padding: 12px;
+        }
+        .story-picture {
+          margin-top: 0;
+          height: 507px;
+        }
+      }
+      #motto {
+        padding: 36px 0;
+        .col {
+          text-align: center;
+        }
+        p {
+          padding: 8px 0;
+        }
+      }
+      #subscribe {
+        padding: 56px 0;
+        .col {
+          text-align: center;
+        }
+        .sub-btns {
+          a {
+            display: inline-block;
+            margin: 0 10px;
+          }
+        }
+      }
+      #location {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (min-width: 992px) {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 15px;
+      }
+      #hero {
+        height: 572px;
+        h1 {
+          font-size: 56px;
+        }
+      }
+      #story {
+        .story-text {
+          padding: 48px 56px;
+        }
+        .story-picture {
+          height: 570px;
+        }
+      }
+      #motto {
+        padding: 56px 0;
+         p {
+           font-size: 24px;
+         }
+      }
+      #origins {
+        padding: 0;
+        position: relative;
+        &:after {
+          content: '';
+          background: $black;
+          height: 85%;
+          transform: translate(-50%, -50%);
+          width: 1px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+        .origin-text,
+        .promise {
+          padding: 48px 56px;
+        }
+        .origin-text {
+          box-sizing: border-box;
+        }
+        .promise {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+      #subscribe {
+        background-position: center 70%;
+      }
+      #location {
+        padding: 48px 44px;
+        .location {
+        }
+      }
+    }
+}
