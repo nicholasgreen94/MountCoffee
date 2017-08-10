@@ -5,7 +5,6 @@
     background: -webkit-linear-gradient(135deg, #bfbfbf 20%, $white 20%, $white 100%);
     background: -o-linear-gradient(135deg, #bfbfbf 20%, $white 20%, $white 100%);
     background: linear-gradient(135deg, #bfbfbf 20%, $white 20%, $white 100%);
-
     box-shadow: none;
     height: 74px;
   }
@@ -20,7 +19,11 @@
       background: $primary-color;
       display: block;
       height: 3px;
+      @include transition-delay(500ms);
+      @include transition-duration(100ms);
+      @include transition-property(background-color);
       width: 32px;
+      will-change: transform;
       position: relative;
       &:before,
       &:after {
@@ -28,6 +31,9 @@
         background: $primary-color;
         display: block;
         height: 3px;
+        @include transition-duration(600ms, 1000ms);
+        @include transition-property(margin, transform);
+        @include transform( rotate(0) );
         width: 32px;
         position: absolute;
       }
@@ -36,6 +42,25 @@
       }
       &:after {
         margin-top: 8px;
+      }
+      &.close-btn {
+        @include transition-duration(100ms);
+        @include transition-property(background-color);
+        background: transparent;
+        &:before,
+        &:after {
+          @include transition-delay(500ms, 0);
+          @include transition-duration(1000ms, 600ms);
+          @include transition-property(transform, margin);
+        }
+        &:before {
+          @include transform( rotate(415deg) );
+          margin-top: 0;
+        }
+        &:after {
+          @include transform( rotate(-415deg) );
+          margin-top: 0;
+        }
       }
     }
   }
@@ -60,7 +85,6 @@
   }
   #nav-mobile {
     background: $white;
-    // transform: translateY(-50%);
     overflow: hidden;
     @include transition-duration(600ms);
     @include transition-property(width);
@@ -88,7 +112,7 @@
       }
     }
   }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 750px) {
     nav {
       border-bottom: 0;
     }
@@ -107,10 +131,13 @@
     #nav-mobile {
       display: block;
       overflow: inherit;
-      width: auto;
+      width: inherit;
       transform: translateY(-50%);
       top: 50%;
-      right: 24px;
+      right: 0;
+      &.menu-open {
+        width: inherit;
+      }
       li {
         display: inline-block;
         margin: 0 10px;

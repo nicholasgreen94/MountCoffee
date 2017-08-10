@@ -5,8 +5,6 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mount Coffee</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Biryani:300,400,700,900|Lora:400,700" rel="stylesheet">
@@ -24,7 +22,7 @@
             </div>
             <ul id="nav-mobile" class="right">
               <li><a href="index.php">Home</a></li>
-              <li><a href="shop.php">Shop</a></li>
+              <li><a href="menu.php">Menu</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>

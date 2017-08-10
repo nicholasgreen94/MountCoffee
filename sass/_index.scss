@@ -1,5 +1,6 @@
 
 #index {
+  padding-bottom: 49px;
   h2 {
     display: inline-block;
     font-size: 26px;
@@ -21,33 +22,6 @@
     font-size: 13px;
     line-height: 1.4;
     margin-bottom: 12px;
-  }
-  #hero {
-    background: $black-overlay, image-url('hero_bg.jpg') no-repeat center center;
-    background-size: cover;
-    height: 356px;
-    position: relative;
-    h1 {
-      color: $white;
-      font-size: 32px;
-      font-weight: 900;
-      line-height: 1.3;
-      transform: translateY(-50%);
-      text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: 24px;
-      hr {
-        background: $main-accent-color;
-        border: none;
-        height: 5px;
-        margin: 10px auto 20px 0;
-        width: 56px;
-      }
-      span {
-        display: block;
-      }
-    }
   }
   #story {
     box-sizing: border-box;
@@ -91,24 +65,26 @@
     }
   }
   #origins {
-    padding: 30px 0;
+    padding: 24px 0;
     .promise {
       box-sizing: border-box;
-      margin-top: 16px;
-      h3 {
-        font-size: 20px;
-        font-weight: 900;
+      h2 {
+        margin-bottom: 16px;
+        text-align: left;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        width: 200px;
       }
       ul {
-        margin: 16px 0;
+        margin-top: 36px;
       }
       li {
         font-size: 13px;
         list-style-position: inside;
         list-style-type: disc;
-      }
-      img {
-        width: 100%;
       }
     }
   }
@@ -123,26 +99,29 @@
     h3 {
       font-size: 15px;
     }
-    .sub-btns {
-      margin-top: 28px;
-      text-align: center;
-      a {
+    #newsletter {
+      .col {
+        padding: 0;
+        @media screen and (min-width: 600px) {
+          padding: 0 .75em;
+        }
+      }
+      #email {
         box-sizing: border-box;
-        background: transparent;
         border: 1px solid $white;
-        border-radius: 20px;
+        padding: 5px;
+      }
+      label {
+        box-sizing: border-box;
         color: $white;
-        display: block;
-        font-weight: 300;
-        margin: 12px auto;
-        max-width: 134px;
-        padding: 6px 12px;
-        @include transition-property(background, border-color);
-        @include transition-duration(600ms);
-        width: 100%;
-        &:hover {
-          background: rgba($main-accent-color, 0.7);
-          border-color: $main-accent-color;
+      }
+      input[type="submit"] {
+        background: $main-accent-color;
+        border-color: $main-accent-color;
+        color: $white;
+        &:hover {;
+          background: $primary-color;
+          border-color: $primary-color;
         }
       }
     }
@@ -187,12 +166,6 @@
       p {
         font-size: 13px;
       }
-      #hero {
-        height: 426px;
-        h1 {
-          font-size: 42px;
-        }
-      }
       #story {
         padding-top: 0;
         .story-text {
@@ -213,16 +186,17 @@
           padding: 8px 0;
         }
       }
+      #origins {
+        text-align: center;
+        p {
+          text-align: left;
+        }
+      }
       #subscribe {
         padding: 56px 0;
-        .col {
-          text-align: center;
-        }
-        .sub-btns {
-          a {
-            display: inline-block;
-            margin: 0 10px;
-          }
+        input[type="submit"] {
+          position: relative;
+          top: 15px;
         }
       }
       #location {
@@ -237,12 +211,6 @@
       }
       p {
         font-size: 15px;
-      }
-      #hero {
-        height: 572px;
-        h1 {
-          font-size: 56px;
-        }
       }
       #story {
         .story-text {

@@ -1,0 +1,13 @@
+#main_footer {
+  background: $white;
+  border-top: 1px solid $primary_color;
+  padding: 12px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  span {
+    display: inline-block;
+    font-size: 10px;
+  }
+}

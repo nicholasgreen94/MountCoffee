@@ -1,7 +1,7 @@
 
 <?php require('inc/header.php'); ?>
 <main id="index">
-  <div id="hero">
+  <div class="hero index-hero">
     <h1 class="container">Seattle's premier coffee<hr><span>That's Us</span></h1>
   </div>
   <div id="story">
@@ -32,14 +32,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="col s12 m6 promise">
-        <h3>We promise that our coffee is always going to be:</h3>
-        <ul>
+        <h2>OUR PROMISES</h2>
+        <img src="images/origins.jpg" alt="A hand holding unripened coffee beans, some are green and some red" class="responsive-img circle">
+        <ul class="center">
           <li>100% Organic</li>
-          <li>Sharing our knowledge with you</li>
-          <li>Free trade</li>
-          <li>Give back 5% of our profits to the local community</li>
+          <li>Free Wifi</li>
+          <li>Free Trade Coffee</li>
+          <li>Helps Those in Need</li>
         </ul>
-        <img src="images/origins.jpg" alt="">
       </div>
     </div>
   </div>
@@ -47,11 +47,19 @@
     <div class="row">
       <div class="col s12">
         <h2>SUBSCRIBE</h2>
-        <h3>We offer various subscription packages for our coffee beans. Select which option you would like.</h3>
-        <div class="sub-btns container">
-          <a href="#">Once a Week</a>
-          <a href="#">Monthly</a>
-          <a href="#">6 Months</a>
+        <div class="row">
+          <h3 class="col s12 offset-m2 m8">We soon will offer a subscription service. If you would like to notified when that service is available sign up for our newsletter below.</h3>
+        </div>
+        <div class="row center">
+          <form id="newsletter" action="index.html" method="post">
+            <div class="input-field col s12 offset-m3 m5">
+              <input id="email" type="text" class="validate">
+              <label for="email">Email*</label>
+            </div>
+            <div class="col s6 m2">
+              <input type="submit" name="submit" value="Submit">
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -72,7 +80,7 @@
         </div>
       </div>
       <div class="col hide-on-med-and-down l5 location-picture">
-        <img src="images/location.jpg" alt="">
+        <img src="images/location.jpg" alt="Empty tables and chairs, the tabletops are white and the chairs range from black, white, dark grey and a light grey.">
       </div>
     </div>
   </div>

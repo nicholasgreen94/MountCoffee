@@ -1,0 +1,63 @@
+#contact {
+  padding-bottom: 124px;
+  #contact-headline {
+    padding: 36px 0;
+    h3 {
+      font-size: 16px;
+    }
+    ul {
+      padding: 36px 0 24px;
+    }
+    @media screen and (min-width: 600px) {
+      padding: 44px 0;
+      h3 {
+        font-size: 22px;
+      }
+      ul {
+        padding: 48px 0 36px;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      padding: 56px 0;
+      h3 {
+        font-size: 28px;
+      }
+      ul {
+        padding: 64px 0 48px;
+      }
+    }
+  }
+  #contact-form {
+    .row {
+      margin: 0;
+    }
+    .col {
+      padding: 0;
+      @media screen and (min-width: 600px) {
+        padding: 0 .75em;
+      }
+    }
+    label {
+      color: $grey;
+    }
+    .input-field label:not(.label-icon).active {
+      color: $primary-color;
+      @include transition-property(color, transform, font-size);
+    }
+    input[type=text]:not(.browser-default),
+    textarea.materialize-textarea {
+      border-bottom: 1px solid $main-accent-color;
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      box-sizing: border-box;
+      color: $primary-color;
+      font-family: $primary-font;
+      font-size: 13px;
+    }
+    textarea {
+      height: 5rem;
+    }
+  }
+}
