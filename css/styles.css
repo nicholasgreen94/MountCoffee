@@ -89,7 +89,7 @@ body {
 
 /* line 28, ../sass/_globals.scss */
 .contact-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/contact_hero.jpg?1502330728');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/contact_hero.jpg?1502172268');
 }
 
 /* line 34, ../sass/_globals.scss */
@@ -554,58 +554,59 @@ input[type="submit"]:hover {
 #index #subscribe #newsletter #email {
   box-sizing: border-box;
   border: 1px solid #fff;
+  color: #fff;
   padding: 5px;
 }
-/* line 114, ../sass/_index.scss */
+/* line 115, ../sass/_index.scss */
 #index #subscribe #newsletter label {
   box-sizing: border-box;
   color: #fff;
 }
-/* line 118, ../sass/_index.scss */
+/* line 119, ../sass/_index.scss */
 #index #subscribe #newsletter input[type="submit"] {
   background: #AD672A;
   border-color: #AD672A;
   color: #fff;
 }
-/* line 122, ../sass/_index.scss */
+/* line 123, ../sass/_index.scss */
 #index #subscribe #newsletter input[type="submit"]:hover {
   background: #1C284B;
   border-color: #1C284B;
 }
-/* line 129, ../sass/_index.scss */
+/* line 130, ../sass/_index.scss */
 #index #location {
   background: -webkit-linear-gradient(-135deg, #bfbfbf 35%, #fff 35%, #fff 100%);
   background: -o-linear-gradient(-135deg, #bfbfbf 35%, #fff 35%, #fff 100%);
   background: linear-gradient(-135deg, #bfbfbf 35%, #ffffff 35%, #ffffff 100%);
   padding: 32px 0 16px;
 }
-/* line 134, ../sass/_index.scss */
+/* line 135, ../sass/_index.scss */
 #index #location .location {
   box-sizing: border-box;
   color: #1C284B;
   margin-top: 18px;
 }
-/* line 138, ../sass/_index.scss */
+/* line 139, ../sass/_index.scss */
 #index #location .location h3 {
   font-size: 32px;
 }
-/* line 141, ../sass/_index.scss */
+/* line 142, ../sass/_index.scss */
 #index #location .location h4 {
   color: #1C284B;
   font-size: 24px;
   margin-top: 4px;
 }
-/* line 146, ../sass/_index.scss */
+/* line 147, ../sass/_index.scss */
 #index #location .location p,
 #index #location .location a {
   font-family: "Biryani", sans-serif;
 }
-/* line 150, ../sass/_index.scss */
+/* line 151, ../sass/_index.scss */
 #index #location .location p {
   color: #1C284B;
   font-size: 15px;
 }
-/* line 154, ../sass/_index.scss */
+/* line 155, ../sass/_index.scss */
 #index #location .location a {
   color: #AD672A;
   font-size: 18px;
@@ -613,93 +614,99 @@ input[type="submit"]:hover {
   bottom: 5px;
 }
 @media screen and (min-width: 600px) {
-  /* line 163, ../sass/_index.scss */
+  /* line 164, ../sass/_index.scss */
   #index h2 {
     font-size: 34px;
   }
-  /* line 166, ../sass/_index.scss */
+  /* line 167, ../sass/_index.scss */
   #index p {
     font-size: 13px;
   }
-  /* line 169, ../sass/_index.scss */
+  /* line 170, ../sass/_index.scss */
   #index #story {
     padding-top: 0;
   }
-  /* line 171, ../sass/_index.scss */
+  /* line 172, ../sass/_index.scss */
   #index #story .story-text {
     box-sizing: border-box;
     padding: 12px;
   }
-  /* line 175, ../sass/_index.scss */
+  /* line 176, ../sass/_index.scss */
   #index #story .story-picture {
     margin-top: 0;
     height: 507px;
   }
-  /* line 180, ../sass/_index.scss */
+  /* line 181, ../sass/_index.scss */
   #index #motto {
     padding: 36px 0;
   }
-  /* line 182, ../sass/_index.scss */
+  /* line 183, ../sass/_index.scss */
   #index #motto .col {
     text-align: center;
   }
-  /* line 185, ../sass/_index.scss */
+  /* line 186, ../sass/_index.scss */
   #index #motto p {
     padding: 8px 0;
   }
-  /* line 189, ../sass/_index.scss */
+  /* line 190, ../sass/_index.scss */
   #index #origins {
     text-align: center;
   }
-  /* line 191, ../sass/_index.scss */
+  /* line 192, ../sass/_index.scss */
   #index #origins p {
     text-align: left;
   }
-  /* line 195, ../sass/_index.scss */
+  /* line 196, ../sass/_index.scss */
   #index #subscribe {
     padding: 56px 0;
+    text-align: center;
   }
-  /* line 197, ../sass/_index.scss */
+  /* line 199, ../sass/_index.scss */
+  #index #subscribe #email {
+    text-align: left;
+  }
+  /* line 202, ../sass/_index.scss */
   #index #subscribe input[type="submit"] {
+    text-align: center;
     position: relative;
     top: 15px;
   }
-  /* line 203, ../sass/_index.scss */
+  /* line 209, ../sass/_index.scss */
   #index #location img {
     width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 209, ../sass/_index.scss */
+  /* line 215, ../sass/_index.scss */
   #index h2 {
     font-size: 40px;
   }
-  /* line 212, ../sass/_index.scss */
+  /* line 218, ../sass/_index.scss */
   #index p {
     font-size: 15px;
   }
-  /* line 216, ../sass/_index.scss */
+  /* line 222, ../sass/_index.scss */
   #index #story .story-text {
     padding: 48px 56px;
   }
-  /* line 219, ../sass/_index.scss */
+  /* line 225, ../sass/_index.scss */
   #index #story .story-picture {
     height: 570px;
   }
-  /* line 223, ../sass/_index.scss */
+  /* line 229, ../sass/_index.scss */
   #index #motto {
     padding: 56px 0;
   }
-  /* line 225, ../sass/_index.scss */
+  /* line 231, ../sass/_index.scss */
   #index #motto p {
     font-size: 24px;
   }
-  /* line 229, ../sass/_index.scss */
+  /* line 235, ../sass/_index.scss */
   #index #origins {
     padding: 0;
     position: relative;
   }
-  /* line 232, ../sass/_index.scss */
+  /* line 238, ../sass/_index.scss */
   #index #origins:after {
     content: '';
     background: #000;
@@ -710,24 +717,24 @@ input[type="submit"]:hover {
     top: 50%;
     left: 50%;
   }
-  /* line 242, ../sass/_index.scss */
+  /* line 248, ../sass/_index.scss */
   #index #origins .origin-text,
   #index #origins .promise {
     padding: 48px 56px;
   }
-  /* line 246, ../sass/_index.scss */
+  /* line 252, ../sass/_index.scss */
   #index #origins .origin-text {
     box-sizing: border-box;
   }
-  /* line 250, ../sass/_index.scss */
+  /* line 256, ../sass/_index.scss */
   #index #origins .promise li {
     font-size: 16px;
   }
-  /* line 255, ../sass/_index.scss */
+  /* line 261, ../sass/_index.scss */
   #index #subscribe {
     background-position: center 70%;
   }
-  /* line 258, ../sass/_index.scss */
+  /* line 264, ../sass/_index.scss */
   #index #location {
     padding: 48px 44px;
   }

@@ -109,6 +109,7 @@
       #email {
         box-sizing: border-box;
         border: 1px solid $white;
+        color: $white;
         padding: 5px;
       }
       label {
@@ -194,7 +195,12 @@
       }
       #subscribe {
         padding: 56px 0;
+        text-align: center;
+        #email {
+          text-align: left;
+        }
         input[type="submit"] {
+          text-align: center;
           position: relative;
           top: 15px;
         }

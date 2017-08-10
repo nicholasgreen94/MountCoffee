@@ -52,7 +52,7 @@ $(function() {// Document ready
   });
 
   //> Contact Form
-  $('#contact-form input[type="submit"]').click(function(e) {
+  $('input[type="submit"]').click(function(e) {
     e.preventDefault();
   });
 
